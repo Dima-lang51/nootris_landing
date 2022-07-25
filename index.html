@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Test</title>
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+         <img class="logo__img" src="./images/logo.png" alt="logo"> 
+        </a>
+        <nav id="nav" class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#" class="menu__link">FAQ</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Оплата и доставка</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Возврат</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Исследования</a></li>
+          </ul>
+        </nav>
+
+        <ul class="menu__lognPhone menu__lognPhone-mb">
+          <li class="lognPhone__item">
+            <a href="#" class="menu__link user__link">Личный кабинет</a>
+          </li>
+          <li class="lognPhone__item-mb">
+            <a href="#" class="menu__link-mb">
+              <img src="./images/icons/user.png" alt="user">
+            </a>
+          </li>
+          <li class="lognPhone__item">
+            <a href="tel:+78006000990" class="menu__link phone__link">8 (800) 600-09-90</a>
+            <a href="tel:+78006000990" class="menu__link phone__link-mb">
+              <img class="phone__img" src="./images/icons/phone.png" alt="phone">
+            </a>
+          </li>
+        </ul>
+    
+        <!-- Бургер меню -->
+        <button class="nav-toggle" id="nav_toggle" type="button">
+          <span class="nav-toggle__item">Menu</span>
+        </button>
+    
+        <div class="header__basket">
+          <div class="basket">
+            <button class="button-basket btn" onclick="//showCardPopup();">
+              <img class="basket__icon" src="./images/icons/basket.svg" alt="basket">
+            </button>
+            <span class="basket-count">1</span>
+          </div>
+        </div>
+
+      </div> <!-- /.header__container -->
+    </header>
+
+    <main class="main">
+
+      <section class="promo">
+        <div class="promo__container">
+          <div class="promo__content">
+            <h1 class="promo__title">АКТИВИРУЙ ИММУНИТЕТ!</h1>
+            <p class="promo__text">Всего пять секунд в день помогут укрепить иммунитет и повысить защитные силы организма</p>
+            <div class="promo__slogan">
+              <h3 class="slogon__title">NOOTRIS ПОМОГАЕТ</h3>
+              <p class="slogon__text">Вашему организму во время пандемии и сезонных простуд</p>
+            </div>
+          </div>
+          <div class="promo__product">
+            <img class="product__ginger" src="./images/product/ginger.png" alt="ginger">
+            <img class="product__lemon" src="./images/product/lemon.png" alt="lemon">
+            <img class="product__nootris" src="./images/product/nootris.png" alt="nootris">
+          </div>
+        </div>
+      </section>
+
+      <section class="order">
+        <div class="order__container">
+
+          <h2 class="order__title">
+            ПОЛУЧИ ЗАЩИТУ ИММУНИТЕТА
+            <span>СО СКИДКОЙ -15% ПЕРВЫМ!</span>
+          </h2>
+
+          <div class="order__price">
+            <div class="price__old">750₽</div>
+            <div class="price__new">690₽</div>
+          </div>
+
+          <div class="order__properties">
+            <div class="properties__ginger">
+              <img class="ginger__img" src="./images/product/ginger.png" alt="ginger">
+              <p class="ginger__text">Содержит <span class="text__accent">имбирь</span></p>
+            </div>
+            <div class="properties__nootris">
+              <img class="nootris__img" src="./images/nootris.png" alt="nootris">
+              <p class="nootris__text">+ Бесплатная доставка <span class="text__accent">Специальная цена</span></p>
+            </div>
+            <div class="properties__viruses">
+              <img class="viruses__img" src="./images/vorus.png" alt="viruses">
+              <p class="viruses__text">Нейтрализует <span class="text__accent">вирусы</span></p>
+            </div>
+          </div>
+          <button class="button">Оформить заказ!</button>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer"></footer>
+
+  </div> <!-- /.wrapper -->
+  
+  <script src="app.js"></script>
+</body>
+</html>

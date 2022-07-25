@@ -1,0 +1,753 @@
+/*------------------- Обнуление ----------------------*/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+button {
+  font-weight: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+[class*="__container"] {
+  max-width: 1440px; 
+  padding: 0 80px 0 64px;
+  margin: 0 auto;
+}
+
+
+/*---------------------- header ------------------*/
+.header {
+  position: relative;
+  background: #111111;
+}
+
+.header__container {
+  padding-top: 23px;
+  padding-bottom: 22.5px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  width: 120px;
+  height: 34.5px;
+}
+
+.header__menu {
+  padding: 0 40px 0 104px;
+  display: flex;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__lognPhone {
+  padding-right: 8.2vw;
+  display: flex;
+}
+
+.phone__img {
+  display: none;
+}
+
+.lognPhone__item-mb {
+  display: none;
+}
+
+.lognPhone__item:not(:last-child) {
+  padding-right: 45px;
+} 
+
+.menu__item:not(:last-child)  {
+  padding-right: 40px;
+}
+
+.menu__link {
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.menu__link:hover {
+  color: #FCDA28;
+}
+
+.basket {
+  position: relative;
+}
+
+.button-basket {
+  background: transparent;
+}
+
+.basket__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.basket-count {
+  padding: 3.5px 6.5px 4px 5.5px;
+  position: absolute;
+  bottom: -8px;
+  right: -6px;
+  background: #FCB500;
+  font-size: 12px;
+  color: #000000;
+  border-radius: 50%;
+}
+
+
+/*---------------------- main --------------------*/
+.main {
+  flex: 1 1 auto;
+}
+
+/*---------------------- section promo ------------------*/
+
+.promo {
+  background: #FCDA28;
+  background-image: url(../images/bg-promo.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-y: -70px;
+}
+
+.promo__container {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__content {
+  width: 70%;
+  position: relative;
+  z-index: 10;
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 152px;
+}
+
+.promo__text {
+  margin-top: 36px;
+  max-width: 657px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.promo__slogan {
+  margin-top: 114px;
+  color: #000000;
+}
+
+.slogon__title {
+  padding-bottom: 5px;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 700;
+}
+
+.slogon__text {
+  max-width: 353px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.promo__product {
+  position: relative;
+  top: -122px;
+  z-index: 9;
+  width: 30%;
+}
+
+.promo__product img {
+  position: absolute;
+}
+
+.product__ginger {
+  left: -91px;
+  top: -5px;
+  z-index: 1;
+}
+
+.product__lemon {
+  left: -306px;
+  top: 163px;
+  z-index: 3;
+}
+
+.product__nootris {
+  left: 83px;
+  top: -213px;
+  z-index: 2;
+}
+
+/*---------------------- section order ------------------*/
+
+.order {
+  background: #111111;
+  padding-top: 110px;
+  padding-bottom: 112px;
+}
+
+.order__title {
+  margin: auto;
+  max-width: 865px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  text-align: center;
+}
+
+.order__title > span {
+  color: rgba(252, 181, 0, 1);
+}
+
+.order__price {
+  max-width: 336px;
+  margin: 0 auto;
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price__old {
+  color: #ADADAD;
+  text-decoration: line-through;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.price__new {
+  font-size: 48px;
+  line-height: 57px;
+}
+
+.order__properties {
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.properties__ginger, .properties__nootris, .properties__viruses {
+  text-align: center;
+}
+
+
+.properties__ginger {
+  margin-left: 110px;
+  margin-top: 40px;
+}
+
+.properties__nootris {
+  margin-top: 45px;
+}
+
+.properties__viruses {
+  margin-top: 40px;
+  margin-right: 97px;
+}
+
+.text__accent {
+  color: #FCB500;
+}
+
+.ginger__text {
+  margin: auto;
+  max-width: 157px;
+}
+
+.ginger__img {
+  margin-bottom: 88px;
+  max-width: 193px;
+  max-height: 168px;
+}
+
+.nootris__text {
+  margin: auto;
+  max-width: 416px;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+.nootris__text > span {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.nootris__img {
+  margin-bottom: 45px;
+  max-width: 480px;
+  height: 160px;
+}
+
+.viruses__text {
+  margin: auto;
+  max-width: 157px;
+}
+
+.viruses__img {
+  margin-bottom: 88px;
+  max-width: 192px;
+  max-height: 160px;
+}
+
+.button {
+  display: block;
+  margin: auto;
+  padding: 16px 56px;
+  background: #FCB500;
+  border-radius: 7px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.button:hover {
+ background: #d57d01;
+ color: #FFFFFF;
+ transition: background-color .2s linear;
+}
+
+
+/*---------------------- footer ------------------*/
+.footer {}
+
+
+/*------------------- mobail menu ----------------*/
+.nav-toggle {
+  display: none;
+}
+
+
+/*------------------- media ----------------*/
+
+@media (min-width: 1441px) {
+  .menu__lognPhone {
+    padding-right: 126px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .promo__title {
+    font-size: 120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .user__link {
+    display: none;
+  }
+  .lognPhone__item-mb {
+    display: block;
+  }
+  .lognPhone__item-mb {
+    order: 2;
+  }
+  .lognPhone__item {
+    order: 1;
+  }
+  .menu__lognPhone {
+    align-items: center;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 1096px) {
+  .header__menu {
+    padding: 0 0 0 40px;
+  }
+  .menu__item:not(:last-child) {
+    padding-right: 20px;
+  }
+  .lognPhone__item {
+    padding-right: 20px;
+  }
+  .promo__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .promo__title {
+    font-size: 100px;
+    line-height: 120px;
+  }
+
+  .product__nootris {
+    max-width: 190px;
+    max-height: 455px;
+    left: 9px;
+    top: -158px;
+  }
+  .promo__product {
+    top: -102px;
+    left: 100px;
+  }
+  .product__lemon {
+    max-width: 400px;
+  }
+  .product__ginger {
+    max-width: 370px;
+    left: -117px;
+  }
+  .promo__text {
+    max-width: 569px;
+    font-size: 20px;
+  }
+  .promo__slogan {
+    margin-top: 70px;
+  }
+  .properties__ginger {
+    margin-left: 0;
+  }
+  .properties__viruses {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1004px) {
+  .header{
+    position: fixed;
+    background: #111111;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+  }
+  .main {
+    margin-top: 80px;
+  }
+  .header__container {
+    position: relative;
+    padding-left: 25px;
+    justify-content: space-between;
+  }
+  .header__menu {
+    display: none;
+    padding-left: 25px;
+  }
+  .header__menu {
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    background: #000000;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, .2);
+    width: 100%;
+  }
+  .menu__lognPhone-mb, .header__basket {
+    position: absolute;
+  }
+  .menu__lognPhone-mb {
+    right: 90px;
+  }
+  .header__basket {
+    right: 80px;
+  }
+  .menu__list {
+    display: block;
+  }
+  .menu__item {
+    margin: 0;
+    padding: 5px 0px;
+  }
+  .header__menu.active {
+    display: block;
+  }
+  .nav-toggle {
+    display: block;
+    width: 30px;
+    padding: 10px 0;
+    position: absolute;
+    top: 40px;
+    right: 24px;
+    z-index: 1;
+    background: none;
+    font-size: 0;
+    color: transparent;
+  }
+  .nav-toggle__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 13;
+    margin: auto;
+
+    transition: background .2s linear;
+  }
+  
+  .nav-toggle__item::before,
+  .nav-toggle__item::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background: #FFFFFF;
+    left: 0;
+    z-index: 1;
+    transition: transform .2s linear;
+  }
+  .nav-toggle__item::before {
+    top: -8px;
+  }
+  .nav-toggle__item::after {
+    bottom: -8px;
+  }
+  .nav-toggle.active .nav-toggle__item {
+    background: none;
+  }
+  .nav-toggle.active .nav-toggle__item::before {
+    transform-origin: left top;
+    transform: rotate(45deg) translate3d(0px, -2px, 0);
+  }
+  .nav-toggle.active .nav-toggle__item::after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translate3d(0px, 3px, 0);
+  }
+  .promo__container, .order__container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+}
+
+@media (max-width: 870px) {
+  .promo__title {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  .promo__text {
+    max-width: 474px;
+    font-size: 20px;
+}
+  .product__ginger {
+    max-width: 310px;
+    left: -110px;
+    top: 50px;
+  }
+  .product__lemon {
+    left: -223px;
+	  width: 330px;
+  }
+  .product__nootris {
+    top: -131px;
+  }
+
+  .promo__product {
+    left: 50px;
+  }
+
+  .ginger__img {
+    max-width: 17.21vw;
+  }
+
+  .nootris__img {
+    max-width: 55.17vw;
+    height: 18.39vw;
+  }
+
+  .viruses__img {
+    max-width: 17.06vw;
+  }
+  .properties__ginger , .properties__viruses{
+    margin-top: 65px;
+  }
+}
+
+@media (max-width: 700px) {
+  .promo__product {
+    left: 0;
+  }
+  .promo__text  {
+    display: none;
+  }
+  .product__nootris {
+    transform: rotate(-90deg);
+  }
+
+  .promo__container {
+    display: block;
+  }
+
+  .slogon__title {
+    font-size: 30px;
+  }
+  
+  .slogon__text {
+    font-size: 16px;
+  }
+  
+  .promo__product {
+    top: -280px;
+  }
+  
+  .product__ginger {
+    left: 315px;
+    top: 94px;
+    max-width: 225px;
+    z-index: 1;
+  }
+  
+  .product__lemon {
+    left: 347px;
+    top: 54px;
+    max-width: 243px;
+  }
+
+  .promo__slogan {
+    margin-top: 178px;
+  }
+  
+  .product__nootris {
+    left: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .promo__title {
+    font-size: 55px;
+    line-height: 70px;
+  }
+  .product__lemon, .product__ginger {
+    display: none;
+  }
+
+  .order {
+    padding-top: 50px
+  }
+
+  .order__title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .order__price {
+    margin-top: 50px;
+  }
+
+  .price__old {
+    font-size: 28px;
+  }
+
+  .price__new {
+    font-size: 40px;
+  }
+
+  .nootris__text {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 530px) {
+  .phone__img {
+    display: block;
+  }
+  .phone__link {
+    display: none;
+  }
+
+  .header__container, .header__menu {
+    padding-left: 10px;
+  }
+
+  .promo__container {
+    padding: 25px 10px;
+  }
+
+  .promo__title {
+    font-size: 50px;
+  }
+
+  .promo__product {
+    top: -230px;
+  }
+
+  .product__nootris {
+    left: 112px;
+    max-width: 120px;
+    max-height: 342px;
+  }
+
+  .order__properties {
+    display: block;
+  }
+
+  .ginger__img, .viruses__img, .nootris__img {
+    margin-bottom: 10px;
+  }
+
+  .order__price {
+    justify-content: center;
+  }
+
+  .price__new {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 456px) {
+  .promo__product {
+    top: -265px;
+  }
+}
+
+
